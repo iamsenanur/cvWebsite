@@ -1,0 +1,493 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+.nav {
+  background-color: slategray;
+  padding: 1.3rem;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.nav > .nav-header {
+  display: inline;
+  font-size: 30px;
+  margin-left: 50px;
+}
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  color: white;
+  padding: 1.rem;
+  
+}
+.nav > .nav-btn {
+  display: none;
+}
+.nav-links a {
+color: white;
+padding: 1.3rem;
+cursor: pointer;
+}
+.nav-links a:hover {
+  background-color: darksalmon;
+}
+.nav-links a.active {
+  background-color: bisque;
+  color: #828282;
+}
+.nav > #nav-check {
+  display: none;
+}
+.mainscreen {
+  height: 545px;
+  background-color: bisque;
+  width: 100%;
+}
+.mainscreen >.hakkimda {
+  width: 900px;
+  float: right;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 120px;
+  margin-right: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.mainscreen >.solakaydir {
+  float: left;
+  padding: 0 10px 10px 0;
+  margin-left: 30px;
+  margin-top: 30px;
+  background:transparent;
+  padding:8px;
+  border:5px solid slategray;
+  box-shadow:5px 5px 5px slategray;
+}
+.contact {
+  background-color: bisque;
+  font-size: 40px;
+  height: 180px;
+  
+}
+.contactme {
+  margin-left: 110px;
+  font-size: 30px;
+  height: 50px;
+}
+.schoolmail {
+  margin-left: 115px;
+  font-size: 20px;
+  height: 20px;
+}
+.email {
+  margin-left: 120px;
+  font-size: 20px;
+  height: 20px;
+  margin-top: 15px;
+}
+.socialmedia {
+  margin-left: 110px;
+  margin-top: 10px;
+}
+.fab {
+  padding: 8px;
+  font-size: 30px;
+  width: 32px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fab:hover {
+  opacity: 0.6;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.fa-medium {
+  background-color: black;
+  color: white;
+}
+.fa-github {
+  background: black;
+  color: white;
+}
+.aboutme {
+  background-color: darksalmon;
+  font-size: 25px;
+  height: 782px;
+  width: 100%;
+  text-align: center;
+}
+.aboutsena {
+  font-size: 40px;
+  
+}
+.myeducation {
+  background-color: bisque;
+  height: 700px;
+  font-size: 30px;
+  width: 100%;
+  
+}
+.myeducation > .open1 {
+  float: left;
+  margin-top: 30px;
+}
+.highschool {
+  float: left;
+  margin-left: 30px;
+  margin-top: 50px;
+}
+.uni {
+  float: right;
+  margin-right: 30px;
+  margin-top: 50px;
+
+}
+.myworks {
+  background-color: darksalmon;
+  height: 1300px;
+  font-size: 30px;
+  width: 100%;
+}
+.myworks >.makale {
+  font-size: 40px;
+  text-align: center;
+ 
+}
+.mediumlinks {
+  margin-top: 30px;
+  text-align: center;
+}
+.exp > span {
+  margin: 0 110px;
+  text-transform: uppercase;
+}
+.explanation {
+  font-size: 30px;
+}
+.explanation > span {
+  margin: 0 70px;
+  text-transform: uppercase;
+}
+
+.myproject {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 70px;
+}
+.githublinks {
+  margin-top: 30px;
+  text-align: center;
+}
+.exp2 > span {
+  margin: 0 20px;
+  text-transform: uppercase;
+}
+.mywork {
+  background-color: bisque;
+  height: 100px;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 35px;
+  width: 100%;
+}
+.stark {
+  text-align: center;
+  background-color: #828282;
+  height: 20px;
+  width: 100%;
+}
+.star-svg{
+  background-color:bisque;
+}
+.star-svg path{
+  fill: #828282;
+}
+
+
+
+
+@media (max-width:730px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: darksalmon;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a
+   {
+    display: block;width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {height: 0px;}
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+@media (max-width:1406px) {
+  .mainscreen >.hakkimda {
+    width: 850px;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 90px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+    
+}
+@media (max-width:1360px) {
+  .mainscreen >.hakkimda {
+    width: 650px;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 90px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
+@media (max-width:1157px) {
+  .mainscreen >.hakkimda {
+    width: 435px;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 90px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
+@media (max-width:950px) {
+  .mainscreen >.hakkimda {
+    width: 360px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
+@media (max-width:877px) {
+  .mainscreen {
+    height: 750px;
+    background-color: bisque;
+    width: 100%;
+  }
+  .mainscreen >.hakkimda {
+    width: 600px;
+    float: right;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .mainscreen >.solakaydir {
+    float: left;
+    padding: 0 10px 10px 0;
+    margin-left: 30px;
+    margin-top: 30px;
+    background:transparent;
+    padding:8px;
+    border:5px solid slategray;
+    box-shadow:5px 5px 5px slategray;
+    
+  }
+}
+@media (max-width:652px) {
+  .mainscreen >.hakkimda {
+    width: 350px;
+    float: right;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .mainscreen {
+    height: 900px;
+    background-color: bisque;
+    width: 100%;
+  }
+  .mainscreen >.solakaydir {
+    float: left;
+    padding: 0 10px 10px 0;
+    margin-left: 0px;
+    margin-top: 30px;
+    background:transparent;
+    padding:8px;
+    border:5px solid slategray;
+    box-shadow:5px 5px 5px slategray;
+  }
+}
+@media (max-width:450px) {
+  .schoolmail {
+    margin-left: 25px;
+    font-size: 20px;
+    height: 20px;
+  }
+  .email {
+    margin-left: 20px;
+    font-size: 20px;
+    height: 20px;
+    margin-top: 15px;
+  }
+  .mainscreen >.hakkimda {
+    width: 250px;
+    float: right;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .mainscreen >.solakaydir {
+    float: left;
+    padding: 0 10px 10px 0;
+    margin-left: 0px;
+    margin-top: 30px;
+    background:transparent;
+    padding:1px;
+    border:1px solid slategray;
+    box-shadow:5px 5px 5px slategray;
+    height: 300px;
+    width: 300px;
+  }
+  .mainscreen {
+    height: 600px;
+    background-color: bisque;
+    width: 100%;
+  }
+  .contactme {
+    margin-left: 80px;
+    font-size: 20px;
+    height: 50px;
+  }
+  .schoolmail {
+    margin-left: 85px;
+    font-size: 10px;
+    height: 20px;
+  }
+  .email {
+    margin-left: 80px;
+    font-size: 10px;
+    height: 20px;
+    margin-top: 15px;
+  }
+  .socialmedia {
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+}
+@media (max-width:611px) {
+  .aboutme {
+    background-color: darksalmon;
+    font-size: 25px;
+    height: 1100px;
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width:1435px) {
+  .highschool {
+    height: 300px;
+    width: 500px;
+  }
+  .uni {
+    height: 300px;
+    width: 500px;
+  }
+  .exp > span {
+    margin: 0 110px;
+    text-transform: uppercase;
+    
+  }
+}
+@media (max-width:1069px) {
+  .myeducation {
+    background-color: bisque;
+    height: 1200px;
+    font-size: 30px;
+    width: 100%;
+    
+  }
+}
+@media (max-width:561px) {
+  .highschool {
+    height: 200px;
+    width: 350px;
+  }
+  .uni {
+    height: 200px;
+    width: 350px;
+  }
+} 
+.makale >.open2 {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 30px;
+}
+
+.myproject >.open3 {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 30px;
+}
+
+@media (max-width:890px) {
+  .myworks {
+    background-color: darksalmon;
+    height: 2700px;
+    font-size: 30px;
+    width: 100%;
+  }
+}
+@media (max-width:372px) {
+  .aboutme {
+    background-color: darksalmon;
+    font-size: 15px;
+    height: 782px;
+    width: 100%;
+    text-align: center;
+  }
+  .aboutsena {
+    font-size: 30px;
+    
+  }
+}
+@media (max-width:411px) {
+  .highschool {
+    height: 150px;
+    width: 200px;
+  }
+  .uni {
+    height: 150px;
+    width: 250px;
+  }
+}
